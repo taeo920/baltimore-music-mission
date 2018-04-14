@@ -6,6 +6,11 @@
 	background: $gray-lightest;
 	position: relative;
 
+	&__logo {
+		background-image: url('../images/logo.svg');
+		background-repeat: no-repeat;
+	}
+
 	&__container {
 		display: flex;
 		align-items: center;
@@ -70,6 +75,11 @@
 	.header {
 		&__container {
 			@include make-container-max-widths();
+		}
+
+		&__logo {
+			width: 240px;
+			height: 55px;
 		}
 
 		&__toggle {

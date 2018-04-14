@@ -8,17 +8,11 @@ function mg_theme_setup() {
 	add_image_size('hero', 1440, 500, true );
 	add_image_size('artist', 640, 480, true );
 
-	// Enable support for post formats
-	// add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
-
 	// Enable support for HTML5 markup.
 	add_theme_support('html5', array('comment-list', 'search-form', 'comment-form', 'gallery', 'caption') );
 
 	// Add default posts and comments RSS feed links to head
 	add_theme_support('automatic-feed-links');
-
-	// Enable admin to set custom background images in 'appearance > background'
-	// add_theme_support('custom-background');
 
 	// Add WYSIWYG editor stylesheet
 	add_editor_style('/dist/styles/editor-styles.min.css');

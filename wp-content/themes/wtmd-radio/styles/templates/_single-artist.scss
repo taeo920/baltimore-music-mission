@@ -3,5 +3,104 @@
 ================================================================================= */
 
 .artist-detail {
-    
+    &__col {
+        margin-bottom: 25px;
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__introduction {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    &__genres {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    &__genres-link {
+        background-color: $off-white;
+        border-radius: 15px;
+        color: $secondary;
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px 15px;
+
+        &:hover {
+            background-color: darken( $off-white, 5% );
+            color: $secondary;
+        }
+    }
+
+    &__purchase-link {
+        margin-top: 20px;
+    }
+
+    &__track-embed {
+        margin-top: 20px;
+    }
+
+    &__social {
+        background-color: $off-white;
+        border-top: 3px solid $tertiary;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+        padding: 15px;
+    }
+
+    &__social-label {
+        font-weight: $font-weight-bold;
+    }
+
+    &__social-platforms {
+        display: flex;
+    }
+
+    &__social-platform {
+        background: $secondary;
+        border-radius: 50%;
+        color: $white;
+        display: block;
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+        margin-left: 15px;
+        text-align: center;
+        width: 24px;
+        height: 24px;
+
+        &:hover {
+            background: lighten( $secondary, 10% );
+            color: $white;
+        }
+    }
+}
+
+// Large and larger
+@include media-breakpoint-up(lg) {
+    .artist-detail {
+        display: flex;
+
+        &__col {
+            flex: 1;
+            margin-bottom: 0;
+            width: 50%;
+
+            &:first-child {
+                margin-right: 25px;
+            }
+
+            &:last-child {
+                margin-left: 25px;
+            }
+        }
+    }
 }

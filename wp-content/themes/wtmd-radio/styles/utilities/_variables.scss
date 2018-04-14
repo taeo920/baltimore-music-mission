@@ -10,12 +10,13 @@ $gray:                  lighten(#000, 33.5%); // #555
 $gray-light:            lighten(#000, 60%);   // #999
 $gray-lighter:			lighten(#000, 80%);   // #ccc
 $gray-lightest:         lighten(#000, 93.5%); // #eee
+$off-white:             #f1f1f1;
 $white:					#fff;
 
 $copy:                  #4A4A4A;
 $primary:       		#ee7500;
 $secondary:     		#16284c;
-$tertiary:              #4A4A4A;
+$tertiary:              #ebba16;
 
 $success:       		$green;
 $info:          		$cyan;
@@ -36,7 +37,7 @@ $font-family-monospace:			Monaco, Consolas, monospace;
 $font-family-base:				$font-family-sans-serif;
 
 $font-size-base:		1.6rem;
-$line-height-base:		1.5;
+$line-height-base:		1.45;
 
 $font-weight-light:		300;
 $font-weight-normal:	400;

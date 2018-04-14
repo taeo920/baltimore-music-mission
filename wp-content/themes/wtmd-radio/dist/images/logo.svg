@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="228px" height="49px" viewBox="0 0 228 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>lOGO</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop---All-Artists" transform="translate(-142.000000, -26.000000)">
+            <g id="lOGO" transform="translate(142.000000, 24.000000)">
+                <text id="BALTIMORE" font-family="Roboto-Black, Roboto" font-size="30" font-weight="700" line-spacing="27" fill="#16284C">
+                    <tspan x="59" y="28">BALTIMORE</tspan>
+                </text>
+                <text id="MUSIC-MISSION" font-family="Roboto-Light, Roboto" font-size="23.5" font-weight="300" fill="#16284C">
+                    <tspan x="59" y="50">MUSIC MISSION</tspan>
+                </text>
+                <g id="music-player" transform="translate(0.000000, 8.000000)">
+                    <polygon id="Fill-1" fill="#EE7500" points="6.398 37.001 40 37.001 40 0.2 6.398 0.2"></polygon>
+                    <polygon id="Fill-2" fill="#EBBA16" points="40 33.801 43.199 33.801 43.199 3.399 40 3.399"></polygon>
+                    <polygon id="Fill-3" fill="#EBBA16" points="3.199 33.801 6.398 33.801 6.398 3.399 3.199 3.399"></polygon>
+                    <polygon id="Fill-4" fill="#EFCE4A" points="43.199 30.598 46.398 30.598 46.398 6.598 43.199 6.598"></polygon>
+                    <polygon id="Fill-5" fill="#EFCE4A" points="0 30.598 3.199 30.598 3.199 6.598 0 6.598"></polygon>
+                    <path d="M31.7870517,8.73271149 C31.6536748,8.61752237 31.4763442,8.56674821 31.2982557,8.59402985 L19.7801012,10.4143211 C19.4875814,10.4590327 19.2678127,10.7129035 19.2678127,11.0122436 L19.2678127,22.9418962 C18.5607637,22.3144186 17.5983282,21.9233818 16.5419227,21.9233818 C14.3692437,21.9233818 12.602,23.5580064 12.602,25.5616909 C12.602,27.5691645 14.3692437,29.2 16.5419227,29.2 C18.6820154,29.2 20.4287978,27.6131183 20.4757829,25.6480827 C20.4788142,25.6389889 20.4818455,25.6329263 20.4818455,25.6238324 L20.4818455,15.168146 L30.7897564,13.5403418 L30.7897564,19.3066184 C30.0789182,18.6761095 29.1195141,18.2888618 28.0600773,18.2888618 C25.8873982,18.2888618 24.1201545,19.9196973 24.1201545,21.9233818 C24.1201545,23.9308554 25.8873982,25.5616909 28.0600773,25.5616909 C30.2327563,25.5616909 32,23.9308554 32,21.9233818 L32,9.19498363 C32,9.01689518 31.9234599,8.84865844 31.7870517,8.73271149 Z" id="Fill-6" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

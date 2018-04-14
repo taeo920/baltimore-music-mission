@@ -2392,7 +2392,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.45;
   color: #212529;
   text-align: left;
   background-color: #fff; }
@@ -6703,7 +6703,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.45; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #16284c;
@@ -6970,6 +6970,9 @@ caption, th, td {
 .header {
   background: #eeeeee;
   position: relative; }
+  .header__logo {
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat; }
   .header__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7034,6 +7037,9 @@ caption, th, td {
     max-width: 1140px; } }
 
 @media (min-width: 992px) {
+  .header__logo {
+    width: 240px;
+    height: 55px; }
   .header__toggle {
     display: none; }
   .header__nav {
@@ -7118,18 +7124,6 @@ caption, th, td {
       margin-right: 1.5rem; }
       .menu-item:last-child {
         margin-right: 0; } }
-
-/* =================================================================================
-~ Page Header
-================================================================================= */
-.page-header {
-  margin-bottom: 1.5rem; }
-  .page-header__title {
-    font-size: 3.2rem;
-    font-weight: 700; }
-  .page-header__meta {
-    font-size: .85em;
-    margin-top: 0.5rem; }
 
 /* =================================================================================
 ~ Promoted Artist
@@ -7217,7 +7211,7 @@ caption, th, td {
   font-style: italic; }
 
 .wysiwyg > * {
-  margin-bottom: 2rem; }
+  margin-bottom: 20px; }
   .wysiwyg > *:last-child {
     margin-bottom: 0; }
 
@@ -7241,3 +7235,91 @@ caption, th, td {
 /* =================================================================================
 ~ Single Artist
 ================================================================================= */
+.artist-detail__col {
+  margin-bottom: 25px; }
+
+.artist-detail__image img {
+  width: 100%;
+  height: auto; }
+
+.artist-detail__introduction {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 30px; }
+
+.artist-detail__genres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px; }
+
+.artist-detail__genres-link {
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  color: #16284c;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px 15px; }
+  .artist-detail__genres-link:hover {
+    background-color: #e4e4e4;
+    color: #16284c; }
+
+.artist-detail__purchase-link {
+  margin-top: 20px; }
+
+.artist-detail__track-embed {
+  margin-top: 20px; }
+
+.artist-detail__social {
+  background-color: #f1f1f1;
+  border-top: 3px solid #ebba16;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+  padding: 15px; }
+
+.artist-detail__social-label {
+  font-weight: 700; }
+
+.artist-detail__social-platforms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.artist-detail__social-platform {
+  background: #16284c;
+  border-radius: 50%;
+  color: #fff;
+  display: block;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  margin-left: 15px;
+  text-align: center;
+  width: 24px;
+  height: 24px; }
+  .artist-detail__social-platform:hover {
+    background: #213d74;
+    color: #fff; }
+
+@media (min-width: 992px) {
+  .artist-detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .artist-detail__col {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      margin-bottom: 0;
+      width: 50%; }
+      .artist-detail__col:first-child {
+        margin-right: 25px; }
+      .artist-detail__col:last-child {
+        margin-left: 25px; } }
