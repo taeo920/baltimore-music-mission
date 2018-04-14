@@ -1,0 +1,61 @@
+{
+    "key": "group_5ad263c99887f",
+    "title": "Music Videos",
+    "fields": [
+        {
+            "key": "field_5ad263c045621",
+            "label": "Music Videos",
+            "name": "music_videos",
+            "type": "repeater",
+            "instructions": "Provide YouTube or Vimeo links for one or more of the artist's music videos (optional.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-hide-label",
+                "id": ""
+            },
+            "collapsed": "",
+            "min": 0,
+            "max": 0,
+            "layout": "block",
+            "button_label": "Add Video",
+            "sub_fields": [
+                {
+                    "key": "field_5ad263ef45622",
+                    "label": "Video",
+                    "name": "video",
+                    "type": "oembed",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "acf-hide-label",
+                        "id": ""
+                    },
+                    "width": "",
+                    "height": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "artist"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Embed fields for artist music videos",
+    "modified": 1523737669
+}

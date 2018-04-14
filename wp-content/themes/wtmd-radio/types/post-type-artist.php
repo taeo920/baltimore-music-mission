@@ -33,7 +33,8 @@ $args = array(
 	'hierarchical' => true,
 	'supports' => array( 'title', 'editor', 'thumbnail' ),
 	'taxonomies' => array(),
-	'has_archive' => true
+	'has_archive' => true,
+	'rewrite' => array('slug' => 'artists')
 );
 
 register_post_type('artist', $args );

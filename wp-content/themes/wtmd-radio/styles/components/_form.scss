@@ -2,3 +2,14 @@
 ~ Form
 ================================================================================= */
 
+.form-control {
+    background: $white;
+    border-radius: 30px;
+    color: $gray-light;
+    font-weight: $font-weight-light;
+    padding: 20px 45px;
+
+    &:focus {
+        color: $gray-light;
+    }
+}

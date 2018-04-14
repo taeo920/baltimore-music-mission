@@ -19,8 +19,6 @@
 @import "~bootstrap/scss/carousel";
 @import "~bootstrap/scss/forms";
 @import "~bootstrap/scss/input-group";
-@import "~bootstrap/scss/buttons";
-@import "~bootstrap/scss/button-group";
 
 /**
  * Base - global styles and variables
@@ -32,13 +30,16 @@
 /**
  * Components - reusable components
  */
+@import "components/artist";
+@import "components/btn";
+@import "components/btn-group";
 @import "components/footer";
 @import "components/form";
 @import "components/header";
 @import "components/hero";
 @import "components/menu";
 @import "components/page-header";
-@import "components/post";
+@import "components/promoted-artist";
 @import "components/sidebar";
 @import "components/wysiwyg";
 
@@ -46,3 +47,4 @@
  * Templates - styles specific to an individual page or template
  */
 @import "templates/page-home";
+@import "templates/single-artist";

@@ -1,0 +1,36 @@
+/* =================================================================================
+~ Promoted Artist
+================================================================================= */
+
+.promoted-artist {
+    &__image {
+        margin-bottom: 25px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+// Large and larger
+@include media-breakpoint-up(lg) {
+    .promoted-artist {
+        display: flex;
+
+        &__image,
+        &__text {
+            flex: 1;
+            width: 50%;
+        }
+    
+        &__image {
+            margin-right: 25px;
+            margin-bottom: 0;
+        }
+    
+        &__text {
+            margin-left: 25px;
+        }
+    }
+}

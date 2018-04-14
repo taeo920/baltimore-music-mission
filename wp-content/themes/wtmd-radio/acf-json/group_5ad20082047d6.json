@@ -1,7 +1,82 @@
 {
     "key": "group_5ad20082047d6",
     "title": "Social Media",
-    "fields": false,
+    "fields": [
+        {
+            "key": "field_5ad25fd3c952b",
+            "label": "Social",
+            "name": "social",
+            "type": "group",
+            "instructions": "Add links to the artist's social media pages (optional).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-hide-label",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_5ad2604cc952e",
+                    "label": "Instagram",
+                    "name": "instagram",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "https:\/\/www.instagram.com\/",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ad260a2c952f",
+                    "label": "Twitter",
+                    "name": "twitter",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "https:\/\/www.twitter.com\/",
+                    "append": "",
+                    "maxlength": ""
+                },
+                {
+                    "key": "field_5ad260c2c9530",
+                    "label": "Facebook",
+                    "name": "facebook",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "prepend": "https:\/\/www.facebook.com\/",
+                    "append": "",
+                    "maxlength": ""
+                }
+            ]
+        }
+    ],
     "location": [
         [
             {
@@ -11,7 +86,7 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 4,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -19,5 +94,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "Artist social media links",
-    "modified": 1523712326
+    "modified": 1523736955
 }

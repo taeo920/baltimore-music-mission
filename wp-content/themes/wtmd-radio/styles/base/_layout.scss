@@ -4,9 +4,10 @@
 
 .main {
 	.content {
-		margin-top: 1.5rem;
-		margin-bottom: 1.5rem;
-		@include make-col-ready();
+		@include make-container();
+		@include make-container-max-widths();
+		padding-top: 40px;
+		padding-bottom: 40px;
 	}
 }
 
@@ -14,7 +15,7 @@
 @include media-breakpoint-up(lg) {
 	.main {
 		.content {
-			@include make-col(8);
+			padding: 80px;
 		}
 	}
 }

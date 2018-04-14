@@ -4,8 +4,6 @@
 
 .header {
 	background: $gray-lightest;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
 	position: relative;
 
 	&__container {
@@ -28,6 +26,18 @@
 	&__logo {
 		font-size: $font-size-base * 2;
 		font-weight: $font-weight-bold;
+	}
+
+	&__brand-container {
+		border-left: 1px solid $gray-lighter;
+		border-right: 1px solid $gray-lighter;
+		padding: 20px 40px;
+	}
+
+	&__brand-header {
+		font-size: 1.2rem;
+		text-align: center;
+		text-transform: uppercase;
 	}
 }
 

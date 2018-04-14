@@ -1,6 +1,36 @@
 <?php
 
 /**
+ * Retrieves the url of an image uploaded via an ACF image field
+ * TODO: Add support for return types other than array
+ *
+ * @param (string) $name The name of the ACF field - assume default return of image array is used
+ * @param (string) $size The size of the image to be retrieved
+ * @return (string) The image url ( defaults to original size )
+ */
+function mg_get_acf_image_src( $name, $size = 'thumbnail' ) {
+	// Return false if ACF is not active
+	if( !function_exists( 'get_field' ) )
+		return false;
+
+	// Assume default of image array is used
+	$image_array = ( get_row() ) ? get_sub_field( $name ) : get_field( $name );
+	
+	return mg_get_image_src_from_array( $image_array, $size );
+}
+
+/**
+ * Echos the url of an image uploaded via an ACF image field
+ *
+ * @param (string) $name The name of the ACF field - assume default return of image object is used
+ * @param (string) $size The size of the image to be retrieved
+ * @return (string) The image url ( defaults to original size )
+ */
+function mg_the_acf_image_src( $name, $size = 'thumbnail' ) {
+	echo mg_get_acf_image_src( $name, $size );
+}
+
+/**
  * Retrieves the correctly sized image source from an array produced by wp_prepare_attachment_for_js()
  *
  * @param (array) $image_array Image array produced by wp_prepare_attachment_for_js() function

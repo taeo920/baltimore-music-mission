@@ -1,0 +1,43 @@
+{
+    "key": "group_5ad2619045b74",
+    "title": "Track Embed",
+    "fields": [
+        {
+            "key": "field_5ad26191af97c",
+            "label": "Track Embed",
+            "name": "track_embed",
+            "type": "textarea",
+            "instructions": "Provide the embed code for a single track from Bandcamp or Soundcloud. For Bandcamp navigate to a track and click Share\/Embed -> Embed This Track. For Soundcloud navigate to a track and click Share -> Embed. For best results use the medium sized embed (optional).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-hide-label",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "artist"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "Single track embed for artist",
+    "modified": 1523737312
+}

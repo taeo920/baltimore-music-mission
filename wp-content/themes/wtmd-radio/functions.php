@@ -5,7 +5,8 @@ function mg_theme_setup() {
 	add_theme_support('post-thumbnails');
 
 	// Add custom image sizes
-	// add_image_size( $name, $width = 0, $height = 0, $crop = false );
+	add_image_size('hero', 1440, 500, true );
+	add_image_size('artist', 640, 480, true );
 
 	// Enable support for post formats
 	// add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
