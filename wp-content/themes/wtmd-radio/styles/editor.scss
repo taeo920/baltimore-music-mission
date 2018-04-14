@@ -1,0 +1,38 @@
+/**
+ * Variables & Utilities - variables, functions, mixins, and helper classes
+ */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/helpers";
+
+/**
+ * Vendor - Bootstrap and other third party stylesheets
+ */
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/button-group";
+
+/**
+ * Base - global styles and variables
+ */
+@import "base/_fonts";
+@import "base/_global";
+
+/**
+ * Components - reusable components
+ */
+@import "components/_wysiwyg";
+
+body, body.wp-autoresize {
+	@extend .wysiwyg;
+	padding-top: 10px !important;
+	padding-right: 10px !important;
+	padding-bottom: 10px !important;
+	padding-left: 10px !important;
+}

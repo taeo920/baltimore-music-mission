@@ -1,0 +1,40 @@
+{
+    "key": "group_5ad2010214785",
+    "title": "Purchase Link",
+    "fields": [
+        {
+            "key": "field_5ad201065e488",
+            "label": "Purchase Link",
+            "name": "purchase_link",
+            "type": "url",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "acf-hide-label",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "artist"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "URL field for artist purchase link",
+    "modified": 1523715867
+}

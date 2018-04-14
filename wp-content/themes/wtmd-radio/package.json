@@ -1,0 +1,32 @@
+{
+    "name": "theme-name",
+    "version": "0.1.0",
+    "description": "A custom WordPress theme",
+    "author": "Mindgrub",
+    "devDependencies": {
+        "webpack": "^3.10.0",
+        "babel-core": "^6.26.0",
+        "babel-loader": "^7.1.2",
+        "babel-preset-env": "^1.6.1",
+        "uglifyjs-webpack-plugin": "^1.1.6",
+        "css-loader": "^0.28.8",
+        "file-loader": "^1.1.6",
+        "node-sass": "^4.7.2",
+        "sass-loader": "^6.0.6",
+        "extract-text-webpack-plugin": "^3.0.2",
+        "exports-loader": "^0.6.4",
+        "webpack-extraneous-file-cleanup-plugin": "^1.0.5",
+        "autoprefixer": "^7.2.5",
+        "postcss-loader": "^2.0.10",
+        "browser-sync": "^2.23.6",
+        "browser-sync-webpack-plugin": "^1.2.0"
+    },
+    "dependencies": {
+        "bootstrap": "^4.0.0-beta.3",
+        "font-awesome": "^4.7.0"
+    },
+    "scripts": {
+        "build": "webpack",
+        "start": "webpack --watch"
+    }
+}

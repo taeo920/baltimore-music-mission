@@ -1,0 +1,6 @@
+name: wtmd-radio
+recipe: pantheon
+config:
+  framework: wordpress
+  site: wtmd-radio
+  id: 3214e596-5e85-4972-abad-245ecaf16bfa

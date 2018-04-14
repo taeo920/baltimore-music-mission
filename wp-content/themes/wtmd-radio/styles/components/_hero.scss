@@ -1,0 +1,19 @@
+/* =================================================================================
+~ Hero
+================================================================================= */
+
+.hero {
+    background-size: cover;
+    background-position: center;
+
+    &__container {
+        @include make-container();
+        @include make-container-max-widths();
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    &__headline {
+        text-align: center;
+    }
+}

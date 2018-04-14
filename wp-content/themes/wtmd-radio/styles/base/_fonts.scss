@@ -1,0 +1,12 @@
+/* =================================================================================
+~ Fonts
+================================================================================= */
+
+// Example of an inline Google Font import
+@import url("//fonts.googleapis.com/css?family=Roboto:300,400,600");
+
+// Font Awesome
+// This should be used for prototyping and quick development work only as Font Awesome is quite bulky
+// Instead build a custom icon font with fontello.com, fontastic.me, or icomoon.io/app/
+$fa-font-path: "~font-awesome/fonts";
+@import "~font-awesome/scss/font-awesome";

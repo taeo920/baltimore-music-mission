@@ -1,0 +1,48 @@
+/**
+ * Variables & Utilities - variables, functions, mixins, and helper classes
+ */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";
+@import "utilities/variables";
+@import "utilities/mixins";
+@import "utilities/helpers";
+
+/**
+ * Vendor - Bootstrap and other third party stylesheets
+ */
+@import "~bootstrap/scss/root";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/input-group";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/button-group";
+
+/**
+ * Base - global styles and variables
+ */
+@import "base/fonts";
+@import "base/global";
+@import "base/layout";
+
+/**
+ * Components - reusable components
+ */
+@import "components/footer";
+@import "components/form";
+@import "components/header";
+@import "components/hero";
+@import "components/menu";
+@import "components/page-header";
+@import "components/post";
+@import "components/sidebar";
+@import "components/wysiwyg";
+
+/**
+ * Templates - styles specific to an individual page or template
+ */
+@import "templates/page-home";

@@ -1,0 +1,85 @@
+/* =================================================================================
+~ Mixins
+================================================================================= */
+
+@mixin icon-font() {
+	font-family: $font-family-icon !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+// List styling
+@mixin bullets() {
+	list-style: disc outside;
+	margin: 1em 0;
+	padding: 0 0 0 3em;
+}
+@mixin numbers() {
+	list-style: decimal outside;
+	margin: 1em 0;
+	padding: 0 0 0 3em;
+}
+
+// A helper mixin for applying high-resolution background images (http://www.retinajs.com)
+@mixin image-2x( $image, $width, $height ) {
+	@media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+		background-image: url($image);
+		background-size: $width $height;
+	}
+}
+
+// Image replacement
+@mixin sprite( $xpos, $ypos, $width, $height ) {
+	background-image: url(../images/sprite.png);
+	background-repeat: no-repeat;
+	background-position: $xpos $ypos;
+	content: '';
+	@include hide-text();
+	@include size($width, $height);
+}
+@mixin sprite-icon( $xpos, $ypos, $width, $height ) {
+	background: url(../images/sprite.png) no-repeat $xpos $ypos;
+	content: '';
+	display: block;
+	margin: -($height / 2) 0 0;
+	position: absolute; top: 50%;
+	@include size($width, $height);
+}
+@mixin sprite-text( $xpos, $ypos, $width, $height ) {
+	background: url(../images/sprite.png) no-repeat $xpos $ypos;
+	content: '';
+	display: inline-block;
+	@include size($width, $height);
+	@include hide-text();
+}
+@mixin ir( $width, $height, $filename ) {
+	background: url("../images/${filename}") no-repeat;
+	display: block;
+	@include size($width, $height);
+	@include hide-text();
+}
+
+@mixin desaturate( $percent: 100% ) {
+	-webkit-filter: grayscale($percent);
+	-moz-filter: grayscale($percent);
+	filter: grayscale($percent);
+}
+
+// Only display content to screen readers
+// See: http://a11yproject.com/posts/how-to-hide-content
+@mixin sr-only() {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0,0,0,0);
+	border: 0;
+}

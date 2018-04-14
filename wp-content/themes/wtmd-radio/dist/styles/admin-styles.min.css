@@ -1,0 +1,24 @@
+/**
+ * ACF Customizations
+ */
+.acf-field.acf-hide-label > .acf-label {
+  margin-bottom: 0; }
+  .acf-field.acf-hide-label > .acf-label > label {
+    display: none; }
+  .acf-field.acf-hide-label > .acf-label > .description {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important; }
+
+.acf-field.acf-hide-thead .acf-table thead {
+  display: none; }
+
+/**
+ * Editor Customizations
+ */
+i.mce-i-icon {
+  font: 400 20px/1 dashicons;
+  padding: 0;
+  vertical-align: bottom;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
