@@ -3,14 +3,6 @@
 ======================================================================================= */
 
 .wysiwyg {
-	a:not(.btn) {
-		color: $secondary;
-
-		&:hover {
-			text-decoration: underline;
-		}
-	}
-
 	ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox),
 	ol {
 		list-style: none;

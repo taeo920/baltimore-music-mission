@@ -9,10 +9,16 @@
     padding-bottom: 100px;
     position: relative;
 
-    &--small {
+    &--internal {
         background: url(../images/hero-image-internal.jpg);
         padding-top: 60px;
         padding-bottom: 60px;
+
+        .hero__container {
+            > * {
+                margin-bottom: 20px;
+            }
+        }
     }
 
     &:after {
@@ -32,14 +38,18 @@
         @include make-container-max-widths();
         position: relative;
         z-index: 1;
+
+        > * {
+            margin-bottom: 40px;
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 
     &__headline {
         color: $white;
-        font-size: 4.5rem;
-        font-weight: $font-weight-light;
-        line-height: 1.2;
-        margin-bottom: 45px;
         text-align: center;
     }
 }

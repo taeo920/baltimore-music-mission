@@ -18,17 +18,6 @@ function try_add_mce_buttons( $buttons ) {
 add_filter('mce_buttons', 'try_add_mce_buttons', 99 );
 
 /**
- * Add buttons to the second row of WYSIWYG editor buttons
- */
-function mg_add_mce_buttons_2( $buttons ) {
-	$buttons[] = 'subscript';
-	$buttons[] = 'superscript';
-
-	return $buttons;
-}
-//add_filter('mce_buttons_2', 'mg_add_mce_buttons_2');
-
-/**
  * Declare WYSIWYG editor plugins
  */
 function try_declare_mce_plugins( $plugins ) {

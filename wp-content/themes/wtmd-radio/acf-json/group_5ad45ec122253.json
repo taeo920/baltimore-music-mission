@@ -1,12 +1,12 @@
 {
-    "key": "group_5ad226871dad1",
-    "title": "Promoted Artist",
+    "key": "group_5ad45ec122253",
+    "title": "Headline",
     "fields": [
         {
-            "key": "field_5ad226b52aa3f",
-            "label": "Promoted Artist",
-            "name": "promoted_artist",
-            "type": "post_object",
+            "key": "field_5ad45ec0b3fb8",
+            "label": "Headline",
+            "name": "headline",
+            "type": "text",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
@@ -15,14 +15,11 @@
                 "class": "acf-hide-label",
                 "id": ""
             },
-            "post_type": [
-                "artist"
-            ],
-            "taxonomy": [],
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object",
-            "ui": 1
+            "default_value": "",
+            "placeholder": "Appears above the search field",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
@@ -34,7 +31,7 @@
             }
         ]
     ],
-    "menu_order": 7,
+    "menu_order": 6,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -43,6 +40,6 @@
         "the_content"
     ],
     "active": 1,
-    "description": "Home page promoted artist",
-    "modified": 1523867592
+    "description": "Text field for hero text on home page",
+    "modified": 1523867637
 }

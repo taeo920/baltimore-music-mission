@@ -5877,7 +5877,8 @@ h1, h2, h3, h4, h5, h6 {
     color: #16284c; }
 
 h1 {
-  font-size: 2.8rem; }
+  font-size: 4.5rem;
+  font-weight: 300; }
 
 h2 {
   font-size: 2.4rem; }
@@ -5900,9 +5901,11 @@ p {
 address {
   margin: 0; }
 
-a:hover, a:active, a:focus {
-  color: inherit;
-  text-decoration: none; }
+a {
+  color: #16284c; }
+  a:hover, a:active, a:focus {
+    color: #ee7500;
+    text-decoration: none; }
 
 ul, ol, dl {
   list-style: none;
@@ -5949,11 +5952,6 @@ caption, th, td {
 /* =======================================================================================
 ~ WYSIWYG - intended to be used on any element whose content is populated by a CMS WYSIWYG
 ======================================================================================= */
-.wysiwyg a:not(.btn), body a:not(.btn), body.wp-autoresize a:not(.btn) {
-  color: #16284c; }
-  .wysiwyg a:not(.btn):hover, body a:not(.btn):hover, body.wp-autoresize a:not(.btn):hover {
-    text-decoration: underline; }
-
 .wysiwyg ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox), body ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox), body.wp-autoresize ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox),
 .wysiwyg ol,
 body ol,

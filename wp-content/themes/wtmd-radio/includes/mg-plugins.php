@@ -19,11 +19,6 @@ function mg_require_plugins() {
             'required'      => true
         ),
         array(
-            'name'          => 'Nice Search',
-            'slug'          => 'nice-search',
-            'required'      => false
-        ),
-        array(
             'name'          => 'Regenerate Thumbnails',
             'slug'          => 'regenerate-thumbnails',
             'required'      => false

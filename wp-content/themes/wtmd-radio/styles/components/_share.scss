@@ -1,0 +1,33 @@
+/* =================================================================================
+~ Share
+================================================================================= */
+
+.share {
+    text-align: center;
+
+    &__button {
+        color: $white;
+        cursor: pointer;
+        border: 1px solid $white;
+        border-radius: 20px;
+        font-size: 1.4rem;
+        line-height: 1;
+        margin-right: 10px;
+        padding: 8px 16px;
+        transition: all 100ms ease-in;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            background-color: $white;
+            color: $secondary;
+        }
+    }
+
+    &__icon {
+        display: inline-block;
+        margin-right: 5px;
+    }
+}

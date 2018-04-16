@@ -15,6 +15,7 @@
     }
 
     &__introduction {
+        color: $secondary;
         font-size: 2.2rem;
         font-weight: bold;
         margin-bottom: 30px;
@@ -22,7 +23,7 @@
 
     &__genres {
         display: flex;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     &__genres-link {
@@ -30,8 +31,11 @@
         border-radius: 15px;
         color: $secondary;
         display: inline-block;
+        font-size: 1.4rem;
+        line-height: 1;
         margin-right: 10px;
-        padding: 5px 15px;
+        padding: 8px 16px;
+        transition: all 100ms ease-in;
 
         &:hover {
             background-color: darken( $off-white, 5% );
@@ -40,7 +44,7 @@
     }
 
     &__purchase-link {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     &__track-embed {
@@ -82,12 +86,32 @@
             color: $white;
         }
     }
+
+    &__music-videos-container {
+        border-top: 1px solid $gray-lightest;
+        margin-top: 80px;
+        padding-top: 40px;
+    }
+
+    &__music-videos-title {
+        margin-bottom: 20px;
+    }
+    
+    &__music-videos {
+        margin-bottom: -20px;
+    }
+
+    &__music-video {
+        margin-bottom: 20px;
+    }
 }
 
-// Large and larger
-@include media-breakpoint-up(lg) {
+// Medium and larger
+@include media-breakpoint-up(md) {
     .artist-detail {
-        display: flex;
+        &__columns {
+            display: flex;
+        }
 
         &__col {
             flex: 1;
@@ -101,6 +125,17 @@
             &:last-child {
                 margin-left: 25px;
             }
+        }
+
+        &__music-videos {
+            @include make-row();
+            margin-bottom: -20px;
+        }
+
+        &__music-video {
+            @include make-col-ready();
+            @include make-col(6);
+            margin-bottom: 20px;
         }
     }
 }

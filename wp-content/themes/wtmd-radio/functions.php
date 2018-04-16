@@ -14,6 +14,9 @@ function mg_theme_setup() {
 	// Add default posts and comments RSS feed links to head
 	add_theme_support('automatic-feed-links');
 
+	// Let WordPress manage the document title
+	add_theme_support('title-tag');
+
 	// Add WYSIWYG editor stylesheet
 	add_editor_style('/dist/styles/editor-styles.min.css');
 

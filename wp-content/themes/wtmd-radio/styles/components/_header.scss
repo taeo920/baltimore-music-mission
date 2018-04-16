@@ -3,7 +3,6 @@
 ================================================================================= */
 
 .header {
-	background: $gray-lightest;
 	position: relative;
 
 	&__logo {
@@ -49,6 +48,11 @@
 // Medium and smaller
 @include media-breakpoint-down(md) {
 	.header {
+		&__logo {
+			width: 240px;
+			height: 55px;
+		}
+
 		&__nav {
 			background: $gray-lightest;
 			display: none;

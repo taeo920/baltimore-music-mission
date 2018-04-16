@@ -1,0 +1,27 @@
+/* =================================================================================
+~ Sort
+================================================================================= */
+
+.sort {
+    margin-bottom: 40px;
+
+    &__label {
+        color: lighten( $copy, 10% );
+        font-weight: $font-weight-light;
+        line-height: 1;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    &__options {
+        display: flex;
+    }
+
+    &__option {
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

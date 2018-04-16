@@ -84,27 +84,3 @@ function mg_get_post_thumbnail_src( $size = 'thumbnail' ) {
 function mg_the_post_thumbnail_src( $size = 'thumbnail' ) {
 	echo mg_get_post_thumbnail_src( $size );
 }
-
-/**
- * Get all of the images attached to the current post
- * Excludes the post thumbnail
- *
- * @param string $size Desired image size
- * @return array
- */
-function mg_get_post_images_src( $size = 'thumbnail' ) {
-	global $post;
-	
-	$images = get_children( array('exclude' => get_post_thumbnail_id( $post->ID ), 'post_parent' => $post->ID, 'post_status' => 'inherit', 'post_type' => 'attachment', 'post_mime_type' => 'image', 'order' => 'ASC', 'orderby' => 'menu_order') );
-		
-	$results = array();
-
-	if ( $images ) {
-		foreach ( $images as $image ) {
-			// get the correct image html for the selected size
-			$results[] = wp_get_attachment_image_src( $image->ID, $size );
-		}
-	}
-	
-	return $results;
-}

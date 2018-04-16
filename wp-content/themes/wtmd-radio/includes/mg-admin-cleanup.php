@@ -53,12 +53,3 @@ function mg_remove_admin_bar_items() {
     $wp_admin_bar->remove_menu('comments');
 }
 add_action('wp_before_admin_bar_render', 'mg_remove_admin_bar_items');
-
-/**
- * Remove post_tags and categories from admin
- */
-function mg_unregister_default_taxonomies() {
-	register_taxonomy('category', array() );
-	register_taxonomy('post_tag', array() );
-}
-//add_action('init', 'mg_unregister_default_taxonomies');

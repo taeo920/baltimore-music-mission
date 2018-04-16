@@ -11,9 +11,10 @@
     font-weight: $font-weight-bold;
     line-height: 1;
     padding: 10px 25px;
-    transition: all 150ms ease-in;
+    transition: all 100ms ease-in;
 
-    &:hover {
+    &:hover,
+    &--active {
         background: $secondary;
         color: $white;
     }
