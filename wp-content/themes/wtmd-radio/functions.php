@@ -22,8 +22,7 @@ function mg_theme_setup() {
 
 	// Register commonly used menus
 	register_nav_menus( array(
-		'header' => 'Header Navigation',
-		'footer' => 'Footer Navigation'
+		'header' => 'Header Navigation'
 	));
 
 	// Cleanup Head

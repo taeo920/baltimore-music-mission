@@ -50,11 +50,15 @@
 @include media-breakpoint-up(md) {
 	.artists {
 		@include make-row();
+		margin-left: -10px;
+		margin-right: -10px;
 	}
 
 	.artist {
 		@include make-col-ready();
 		@include make-col(6);
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
