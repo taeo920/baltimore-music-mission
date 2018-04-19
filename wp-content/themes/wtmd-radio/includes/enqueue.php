@@ -14,10 +14,10 @@ add_action('wp_enqueue_scripts', 'mg_load_styles');
 function mg_load_scripts() {
 	// Bootstrap 4 requires jQuery 2.x.x so we must override the jQuery version packaged with WordPress ( 1.x.x )
 	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, false);
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, false );
 
 	// Theme Script
-	wp_enqueue_script('main', get_bloginfo('template_url').'/dist/scripts/app-scripts.min.js', array(), false, false);
+	wp_enqueue_script('main', get_bloginfo('template_url').'/dist/scripts/app-scripts.min.js', array(), false, true );
 
 	// WordPress Scripts
 	if( is_singular() && get_option('thread_comments') ) wp_enqueue_script('comment-reply');
