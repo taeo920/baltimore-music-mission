@@ -1,6 +1,31 @@
 <?php
 
 /**
+ * Generate an excerpt consisting of the artist introduction and content
+ */
+function mg_the_excerpt() {
+	global $post;
+
+	$introduction = get_field('introduction');
+	$content = get_the_content();
+
+	if( $introduction ) {
+		$excerpt = $introduction . ' ' . $content;
+	} else {
+		$excerpt = $content;
+	}
+
+	$excerpt = strip_shortcodes( $excerpt );
+
+	$excerpt_length = apply_filters( 'excerpt_length', 65 );
+	$excerpt_more = apply_filters( 'excerpt_more', ' ' . '[&hellip;]' );
+	$excerpt = wp_trim_words( $excerpt, $excerpt_length, $excerpt_more );
+	$excerpt = apply_filters( 'the_excerpt', $excerpt );
+
+	echo $excerpt;
+}
+
+/**
  * Generate a sorting link given a type of sorting
  */
 function mg_the_sort_link( $type ) {
