@@ -6716,7 +6716,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #16284c; }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   font-weight: 300; }
 
 h2 {
@@ -6788,6 +6788,10 @@ caption, th, td {
 /* =================================================================================
 ~ Media Queries
 ================================================================================= */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem; } }
+
 /* =================================================================================
 ~ Layout - general site wide layout adjustments
 ================================================================================= */
@@ -6813,6 +6817,11 @@ caption, th, td {
       max-width: 1140px; } }
 
 @media (min-width: 992px) {
+  .main .content {
+    padding-top: 80px;
+    padding-bottom: 80px; } }
+
+@media (min-width: 1200px) {
   .main .content {
     padding: 80px; } }
 
@@ -6862,7 +6871,8 @@ caption, th, td {
     margin-right: -20px;
     margin-left: -20px;
     margin-left: -10px;
-    margin-right: -10px; }
+    margin-right: -10px;
+    margin-bottom: -40px; }
   .artist {
     position: relative;
     width: 100%;
@@ -6908,9 +6918,18 @@ caption, th, td {
     text-transform: uppercase; }
     .btn--alt:hover {
       background: #d56800; }
+  .btn--buy {
+    font-size: 2.2rem;
+    padding: 20px 40px; }
   .btn__icon {
     display: inline-block;
     margin-right: 10px; }
+
+@media (max-width: 767.98px) {
+  .btn--alt .btn__text {
+    display: none; }
+  .btn--alt .btn__icon {
+    margin-right: 0; } }
 
 .btn-group {
   display: -webkit-box;
@@ -6970,9 +6989,13 @@ caption, th, td {
   border-radius: 30px;
   color: #999999;
   font-weight: 300;
-  padding: 20px 45px; }
+  padding: 10px 20px; }
   .form-control:focus {
     color: #999999; }
+
+@media (min-width: 768px) {
+  .form-control {
+    padding: 20px 45px; } }
 
 /* =================================================================================
 ~ Header
@@ -7101,13 +7124,11 @@ caption, th, td {
 .hero {
   background-size: cover;
   background-position: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative; }
   .hero--internal {
-    background: url(../images/hero-image-internal.jpg);
-    padding-top: 60px;
-    padding-bottom: 60px; }
+    background-image: url(../images/hero-image-internal.jpg); }
     .hero--internal .hero__container > * {
       margin-bottom: 20px; }
   .hero:after {
@@ -7148,10 +7169,26 @@ caption, th, td {
     color: #fff;
     text-align: center; }
 
+@media (min-width: 768px) {
+  .hero {
+    padding-top: 60px;
+    padding-bottom: 60px; } }
+
 @media (min-width: 992px) {
+  .hero {
+    padding-top: 100px;
+    padding-bottom: 100px; }
+    .hero__container {
+      padding-left: 100px;
+      padding-right: 100px; }
+    .hero--internal {
+      padding-top: 60px;
+      padding-bottom: 60px; } }
+
+@media (min-width: 1200px) {
   .hero__container {
-    padding-left: 180px;
-    padding-right: 180px; } }
+    padding-left: 190px;
+    padding-right: 190px; } }
 
 /* =================================================================================
 ~ Menu
@@ -7253,10 +7290,10 @@ caption, th, td {
 ================================================================================= */
 .pagination {
   border-top: 1px solid #eeeeee;
+  margin-top: 40px;
   padding-top: 40px;
   text-align: center; }
   .pagination .page-numbers {
-    font-size: 1.8rem;
     font-weight: 700;
     padding-left: 5px;
     padding-right: 5px; }
@@ -7271,10 +7308,14 @@ caption, th, td {
   .pagination .next,
   .pagination .prev {
     text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .pagination .page-numbers {
+    font-size: 1.8rem; }
   .pagination .prev {
     margin-right: 15px; }
   .pagination .next {
-    margin-left: 15px; }
+    margin-left: 15px; } }
 
 /* =================================================================================
 ~ Promoted Artist
@@ -7346,6 +7387,13 @@ caption, th, td {
     .sort__option:last-child {
       margin-right: 0; }
 
+@media (max-width: 767.98px) {
+  .sort__option {
+    font-size: 1.4rem;
+    margin-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px; } }
+
 /* =======================================================================================
 ~ WYSIWYG - intended to be used on any element whose content is populated by a CMS WYSIWYG
 ======================================================================================= */
@@ -7402,8 +7450,16 @@ caption, th, td {
 ================================================================================= */
 .home .promoted-artist {
   border-bottom: 1px solid #eeeeee;
-  padding-bottom: 80px;
-  margin-bottom: 80px; }
+  padding-bottom: 40px;
+  margin-bottom: 40px; }
+
+.home .featured-artists {
+  margin-bottom: 40px; }
+
+@media (min-width: 992px) {
+  .home .promoted-artist {
+    padding-bottom: 80px;
+    margin-bottom: 80px; } }
 
 /* =================================================================================
 ~ Single Artist
@@ -7488,7 +7544,7 @@ caption, th, td {
 
 .artist-detail__music-videos-container {
   border-top: 1px solid #eeeeee;
-  margin-top: 80px;
+  margin-top: 40px;
   padding-top: 40px; }
 
 .artist-detail__music-videos-title {
@@ -7515,6 +7571,9 @@ caption, th, td {
       margin-right: 25px; }
     .artist-detail__col:last-child {
       margin-left: 25px; }
+  .artist-detail__music-videos-container {
+    margin-top: 80px;
+    padding-top: 80px; }
   .artist-detail__music-videos {
     display: -webkit-box;
     display: -ms-flexbox;

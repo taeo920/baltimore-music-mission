@@ -5877,7 +5877,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #16284c; }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 3.2rem;
   font-weight: 300; }
 
 h2 {
@@ -5949,6 +5949,10 @@ caption, th, td {
 /* =================================================================================
 ~ Media Queries
 ================================================================================= */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem; } }
+
 /**
  * Components - reusable components
  */

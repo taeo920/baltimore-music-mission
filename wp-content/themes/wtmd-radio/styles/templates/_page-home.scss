@@ -5,7 +5,21 @@
 .home {
     .promoted-artist {
         border-bottom: 1px solid $gray-lightest;
-        padding-bottom: 80px;
-        margin-bottom: 80px;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .featured-artists {
+        margin-bottom: 40px;
+    }
+}
+
+// Large and larger
+@include media-breakpoint-up(lg) {
+    .home {
+        .promoted-artist {
+            padding-bottom: 80px;
+            margin-bottom: 80px;
+        }
     }
 }

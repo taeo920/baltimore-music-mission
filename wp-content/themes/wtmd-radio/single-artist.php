@@ -43,6 +43,10 @@
 				<?php endif; ?>
 
 				<div class="artist-detail__description wysiwyg"><?php the_content(); ?></div>
+
+				<?php if( $purchase_link = get_field('purchase_link') ) : ?>
+					<a class="artist-detail__purchase-link btn btn--buy" href="<?php echo $purchase_link; ?>" target="_blank">Buy Music</a>
+				<?php endif; ?>
 				
 				<?php if( $genres = wp_get_object_terms( $post->ID, 'genre') ) : ?>
 					<div class="artist-detail__genres">
@@ -50,10 +54,6 @@
 							<a class="artist-detail__genres-link" href="<?php echo get_term_link( $genre ); ?>"><?php echo $genre->name; ?></a>
 						<?php endforeach; ?>
 					</div>
-				<?php endif; ?>
-
-				<?php if( $purchase_link = get_field('purchase_link') ) : ?>
-					<a class="artist-detail__purchase-link btn" href="<?php echo $purchase_link; ?>">Buy Music</a>
 				<?php endif; ?>
 			</div>
 		</div>

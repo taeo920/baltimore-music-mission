@@ -31,8 +31,28 @@
         }
     }
 
+    &--buy {
+        font-size: 2.2rem;
+        padding: 20px 40px;
+    }
+
     &__icon {
         display: inline-block;
         margin-right: 10px;
+    }
+}
+
+// Small and smaller
+@include media-breakpoint-down(sm) {
+    .btn {
+        &--alt {
+            .btn__text {
+                display: none;
+            }
+    
+            .btn__icon {
+                margin-right: 0;
+            }
+        }
     }
 }

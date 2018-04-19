@@ -7,9 +7,16 @@
     border-radius: 30px;
     color: $gray-light;
     font-weight: $font-weight-light;
-    padding: 20px 45px;
+    padding: 10px 20px;
 
     &:focus {
         color: $gray-light;
+    }
+}
+
+// Medium and larger
+@include media-breakpoint-up(md) {
+    .form-control {
+        padding: 20px 45px;
     }
 }

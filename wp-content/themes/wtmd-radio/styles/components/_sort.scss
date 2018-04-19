@@ -25,3 +25,15 @@
         }
     }
 }
+
+// Small and smaller
+@include media-breakpoint-down(sm) {
+    .sort {
+        &__option {
+            font-size: 1.4rem;
+            margin-right: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}

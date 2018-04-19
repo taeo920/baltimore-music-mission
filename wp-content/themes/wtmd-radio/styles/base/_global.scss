@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-h1 { font-size: 4.5rem; font-weight: $font-weight-light; }
+h1 { font-size: 3.2rem; font-weight: $font-weight-light; }
 h2 { font-size: 2.4rem; }
 h3 { font-size: 2.2rem; }
 h4 { font-size: 2rem; }
@@ -111,20 +111,7 @@ caption,th,td {
 ~ Media Queries
 ================================================================================= */
 
-// Extra small and larger
-@include media-breakpoint-up(xs) {}
-
-// Small and larger
-@include media-breakpoint-up(sm) {}
-
 // Medium and larger
-@include media-breakpoint-up(md) {}
-
-// Large and larger
-@include media-breakpoint-up(lg) {}
-
-// Extra large and larger
-@include media-breakpoint-up(xl) {}
-
-// Extra small only
-@include media-breakpoint-only(xs) {}
+@include media-breakpoint-up(md) {
+	h1 { font-size: 4.5rem; }
+}

@@ -15,6 +15,16 @@
 @include media-breakpoint-up(lg) {
 	.main {
 		.content {
+			padding-top: 80px;
+			padding-bottom: 80px;
+		}
+	}
+}
+
+// Extra large and larger
+@include media-breakpoint-up(xl) {
+	.main {
+		.content {
 			padding: 80px;
 		}
 	}
