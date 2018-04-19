@@ -27,6 +27,16 @@ function mg_require_plugins() {
             'name'          => 'Simple Page Ordering',
             'slug'          => 'simple-page-ordering',
             'required'      => false
+        ),
+        array(
+            'name'          => 'WP Term Order',
+            'slug'          => 'wp-term-order',
+            'required'      => false
+        ),
+        array(
+            'name'          => 'Minimum Featured Image Size',
+            'slug'          => 'minimum-featured-image-size',
+            'required'      => false
         )
     );
 
