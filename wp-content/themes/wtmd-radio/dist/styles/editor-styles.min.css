@@ -5983,9 +5983,6 @@ body.wp-autoresize ol {
 .wysiwyg ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox), body ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox), body.wp-autoresize ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox) {
   list-style: disc outside; }
 
-.wysiwyg h1, body h1, body.wp-autoresize h1, .wysiwyg h2, body h2, body.wp-autoresize h2, .wysiwyg h3, body h3, body.wp-autoresize h3, .wysiwyg h4, body h4, body.wp-autoresize h4, .wysiwyg h5, body h5, body.wp-autoresize h5, .wysiwyg h6, body h6, body.wp-autoresize h6 {
-  font-weight: bold; }
-
 .wysiwyg blockquote, body blockquote, body.wp-autoresize blockquote {
   border-left: 4px solid #cccccc;
   padding-left: 1.5rem; }

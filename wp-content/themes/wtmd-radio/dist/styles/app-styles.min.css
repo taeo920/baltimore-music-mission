@@ -7413,9 +7413,6 @@ caption, th, td {
 .wysiwyg ul:not(.gform_fields):not(.gfield_radio):not(.gfield_checkbox) {
   list-style: disc outside; }
 
-.wysiwyg h1, .wysiwyg h2, .wysiwyg h3, .wysiwyg h4, .wysiwyg h5, .wysiwyg h6 {
-  font-weight: bold; }
-
 .wysiwyg blockquote {
   border-left: 4px solid #cccccc;
   padding-left: 1.5rem; }
