@@ -10,5 +10,12 @@
 	<meta name="MobileOptimized" content="320">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="cleartype" content="on">
+
+	<?php if( is_singular('artist') && has_post_thumbnail() ) : ?>
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:image" content="<?php the_post_thumbnail_url('artist'); ?>">
+		<meta property="og:image" content="<?php the_post_thumbnail_url('artist'); ?>">
+	<?php endif; ?>
+
 	<?php wp_head(); ?>
 </head>
