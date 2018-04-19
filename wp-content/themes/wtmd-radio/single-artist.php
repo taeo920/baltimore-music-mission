@@ -45,7 +45,7 @@
 				<div class="artist-detail__description wysiwyg"><?php the_content(); ?></div>
 
 				<?php if( $purchase_link = get_field('purchase_link') ) : ?>
-					<a class="artist-detail__purchase-link btn btn--buy" href="<?php echo $purchase_link; ?>" target="_blank">Buy Music</a>
+					<a class="artist-detail__purchase-link btn btn--large" href="<?php echo $purchase_link; ?>" target="_blank">Buy Music</a>
 				<?php endif; ?>
 				
 				<?php if( $genres = wp_get_object_terms( $post->ID, 'genre') ) : ?>
