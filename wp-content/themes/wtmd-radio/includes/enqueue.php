@@ -70,3 +70,21 @@ function mg_bust_asset_cache( $target_url ) {
 }
 add_filter('style_loader_src', 'mg_bust_asset_cache', 9999 );
 add_filter('script_loader_src', 'mg_bust_asset_cache', 9999 );
+
+/**
+ * Add asyc attribute to selected styles and scripts
+ * http://matthewhorne.me/defer-async-wordpress-scripts/
+ */
+function mg_add_async_attribute( $tag, $handle ) {
+	// add asset handles to the array below
+	$assets = array('main');
+	
+	foreach( $assets as $asset) {
+		 if ( $asset === $handle ) {
+			 return str_replace(' src', ' async="async" src', $tag);
+		 }
+	}
+	return $tag;
+ }
+add_filter('script_loader_tag', 'mg_add_async_attribute', 10, 2);
+add_filter('style_loader_tag', 'mg_add_async_attribute', 10, 2);
