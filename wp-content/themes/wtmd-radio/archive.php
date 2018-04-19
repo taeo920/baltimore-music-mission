@@ -1,6 +1,6 @@
 <div class="hero hero--internal">
 	<div class="hero__container">
-		<div class="hero__search"><?php mg_get_template_part('partials', 'form-search'); ?></div>
+		<div class="hero__search"><?php get_template_part('partials/form-search'); ?></div>
 	</div>
 </div>
 
@@ -11,13 +11,13 @@
 		</header>
 	<?php endif; ?>
 
-	<?php mg_get_template_part('partials', 'sort'); ?>
+	<?php get_template_part('partials/sort'); ?>
 
 	<div class="artists">
 		<?php while( have_posts() ) : the_post(); ?>
-			<?php mg_get_template_part('partials', 'loop-artist'); ?>
+			<?php get_template_part('partials/loop-artist'); ?>
 		<?php endwhile; ?>
 	</div>
 
-	<?php mg_get_template_part('partials', 'pagination'); ?>
+	<?php get_template_part('partials/pagination'); ?>
 </div>

@@ -10,8 +10,52 @@
 	padding-bottom: 40px;
 	text-align: center;
 
+	a {
+		color: $tertiary;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
 	&__container {
 		@include make-container();
+	}
+}
+
+// Medium and smaller
+@include media-breakpoint-down(md) {
+	.footer {
+		&__part {
+			display: block;
+			margin-bottom: 5px;
+	
+			&--last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+// Large and larger
+@include media-breakpoint-up(lg) {
+	.footer {
+		&__copyright {
+			display: flex;
+			justify-content: center;
+		}
+
+		&__part {
+			&:after {
+				content: '|';
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+
+			&:last-child:after {
+				display: none;
+			}
+		}
 	}
 }
 

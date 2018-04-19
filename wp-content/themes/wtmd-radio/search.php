@@ -13,9 +13,9 @@
 
 	<div class="artists">
 		<?php while( have_posts() ) : the_post(); ?>
-			<?php mg_get_template_part('partials', 'loop-artist'); ?>
+			<?php get_template_part('partials/loop-artist'); ?>
 		<?php endwhile; ?>
 	</div>
 
-	<?php mg_get_template_part('partials', 'pagination'); ?>
+	<?php get_template_part('partials/pagination'); ?>
 </div>

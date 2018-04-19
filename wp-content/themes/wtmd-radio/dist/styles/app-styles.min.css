@@ -6959,12 +6959,38 @@ caption, th, td {
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center; }
+  .footer a {
+    color: #ebba16; }
+    .footer a:hover {
+      text-decoration: underline; }
   .footer__container {
     width: 100%;
     padding-right: 20px;
     padding-left: 20px;
     margin-right: auto;
     margin-left: auto; }
+
+@media (max-width: 991.98px) {
+  .footer__part {
+    display: block;
+    margin-bottom: 5px; }
+    .footer__part--last-child {
+      margin-bottom: 0; } }
+
+@media (min-width: 992px) {
+  .footer__copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .footer__part:after {
+    content: '|';
+    margin-left: 5px;
+    margin-right: 5px; }
+  .footer__part:last-child:after {
+    display: none; } }
 
 @media (min-width: 992px) and (min-width: 576px) {
   .footer__container {

@@ -1,6 +1,6 @@
 <div class="hero hero--internal">
 	<div class="hero__container">
-		<div class="hero__search"><?php mg_get_template_part('partials', 'form-search'); ?></div>
+		<div class="hero__search"><?php get_template_part('partials/form-search'); ?></div>
 	</div>
 </div>
 
