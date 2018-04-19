@@ -18,20 +18,14 @@
 				<?php if( $embed = get_field('track_embed') ) : ?>
 					<div class="artist-detail__track-embed"><?php echo $embed; ?></div>
 				<?php endif; ?>
-				
-				<?php if( $social = get_field('social') ) : ?>
+
+				<?php if( $platforms = mg_get_artist_social_media() ) : ?>
 					<div class="artist-detail__social">
 						<label class="artist-detail__social-label">Follow The Band</label>
 						<div class="artist-detail__social-platforms">
-							<?php if( $social['instagram'] ) : ?>
-								<a class="artist-detail__social-platform" href="https://www.instagram.com/<?php echo $social['instagram']; ?>" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i><span class="sr-only">Instagram</span></a>
-							<?php endif; ?>
-							<?php if( $social['twitter'] ) : ?>
-								<a class="artist-detail__social-platform" href="https://www.twitter.com/<?php echo $social['twitter']; ?>" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Twitter</span></a>
-							<?php endif; ?>
-							<?php if( $social['facebook'] ) : ?>
-								<a class="artist-detail__social-platform" href="https://www.faebook.com/<?php echo $social['facebook']; ?>" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
-							<?php endif; ?>
+							<?php foreach( $platforms as $platform ) : ?>
+								<a class="artist-detail__social-platform" href="<?php echo $platform['url'] . $platform['handle']; ?>" target="_blank"><i class="fa fa-<?php echo $platform['slug']; ?>" aria-hidden="true"></i><span class="sr-only"><?php echo $platform['name']; ?></span></a>
+							<?php endforeach; ?>
 						</div>
 					</div>
 				<?php endif; ?>

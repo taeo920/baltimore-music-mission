@@ -38,6 +38,34 @@ function mg_the_sort_link( $type ) {
 }
 
 /**
+ * Generate array of artist social media platforms
+ */
+function mg_get_artist_social_media() {
+	global $post;
+	
+    // Grab the full social field object which includes platform names and URLs
+    $social = get_field_object('social');
+
+    // Initialize empty array
+    $platforms = array();
+    
+    // Loop through the sub fields - each one represents a social media platform
+    foreach( $social['sub_fields'] as $platform ) {
+        // If a value ( handle ) has been set for this platform add it to the array
+        if( $social['value'][$platform['name']] ) {
+            $platforms[] = array(
+                'name' => $platform['label'],
+                'slug' => $platform['name'],
+                'url' => $platform['prepend'],
+                'handle' => $social['value'][$platform['name']]
+            );
+        }
+	}
+	
+	return $platforms;
+}
+
+/**
  * Generate pagination links
  */
 function mg_pagination() {
