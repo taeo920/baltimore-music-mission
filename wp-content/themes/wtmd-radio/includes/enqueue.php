@@ -4,7 +4,7 @@
  * Front End CSS
  */
 function mg_load_styles() {
-	wp_enqueue_style('main-style', get_bloginfo('template_url') . '/dist/styles/app-styles.min.css', array(), false, 'screen');
+	wp_enqueue_style('main-style', get_bloginfo('template_url') . '/dist/styles/app-styles.min.css', array(), true, 'screen');
 }
 add_action('wp_enqueue_scripts', 'mg_load_styles');
 
@@ -14,10 +14,10 @@ add_action('wp_enqueue_scripts', 'mg_load_styles');
 function mg_load_scripts() {
 	// Bootstrap 4 requires jQuery 2.x.x so we must override the jQuery version packaged with WordPress ( 1.x.x )
 	wp_deregister_script('jquery');
-	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, true);
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js', array(), null, false);
 
 	// Theme Script
-	wp_enqueue_script('main', get_bloginfo('template_url').'/dist/scripts/app-scripts.min.js', array(), false, true);
+	wp_enqueue_script('main', get_bloginfo('template_url').'/dist/scripts/app-scripts.min.js', array(), false, false);
 
 	// WordPress Scripts
 	if( is_singular() && get_option('thread_comments') ) wp_enqueue_script('comment-reply');
@@ -72,19 +72,18 @@ add_filter('style_loader_src', 'mg_bust_asset_cache', 9999 );
 add_filter('script_loader_src', 'mg_bust_asset_cache', 9999 );
 
 /**
- * Add asyc attribute to selected styles and scripts
+ * Add asyc attribute to selected scripts
  * http://matthewhorne.me/defer-async-wordpress-scripts/
  */
 function mg_add_async_attribute( $tag, $handle ) {
 	// add asset handles to the array below
-	$assets = array('main');
+	$assets = array('main', 'jquery');
 	
 	foreach( $assets as $asset) {
 		 if ( $asset === $handle ) {
-			 return str_replace(' src', ' async="async" src', $tag);
+			 $tag = str_replace(' src', ' async="async" src', $tag );
 		 }
 	}
 	return $tag;
  }
 add_filter('script_loader_tag', 'mg_add_async_attribute', 10, 2);
-add_filter('style_loader_tag', 'mg_add_async_attribute', 10, 2);
