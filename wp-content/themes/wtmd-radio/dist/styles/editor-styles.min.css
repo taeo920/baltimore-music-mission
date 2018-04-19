@@ -5906,6 +5906,9 @@ a {
   a:hover, a:active, a:focus {
     color: #ee7500;
     text-decoration: none; }
+  a:not([href]):not([tabindex]) {
+    color: #16284c;
+    cursor: pointer; }
 
 ul, ol, dl {
   list-style: none;

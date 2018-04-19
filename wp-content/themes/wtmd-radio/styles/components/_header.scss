@@ -33,6 +33,12 @@
 		&.active {
 			color: $secondary;
 		}
+
+		&.active {
+			&:before {
+				content: '\f00d';
+			}
+		}
 	}
 
 	&__brand-container {
@@ -61,7 +67,8 @@
 
 		&__nav {
 			background: $white;
-			display: block;
+			border-bottom: 1px solid $gray-lightest;
+			display: none;
 			padding-bottom: 20px;
 			position: absolute;
 			top: 100%;

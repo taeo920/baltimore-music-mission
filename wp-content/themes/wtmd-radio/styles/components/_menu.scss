@@ -36,12 +36,17 @@
 				font-weight: bold;
 				padding: 20px;
 			}
+
+			&:hover {
+				.sub-menu {
+					display: block;
+				}
+			}
 		}
 	}
 
 	.sub-menu {
 		background: $secondary;
-		display: block;
 		padding-left: 20px;
 		padding-right: 20px;
 

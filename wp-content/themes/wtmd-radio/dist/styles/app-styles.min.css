@@ -6745,6 +6745,9 @@ a {
   a:hover, a:active, a:focus {
     color: #ee7500;
     text-decoration: none; }
+  a:not([href]):not([tabindex]) {
+    color: #16284c;
+    cursor: pointer; }
 
 ul, ol, dl {
   list-style: none;
@@ -7013,6 +7016,8 @@ caption, th, td {
       content: '\F0C9'; }
     .header__toggle:hover, .header__toggle.active {
       color: #16284c; }
+    .header__toggle.active:before {
+      content: '\F00D'; }
   .header__brand-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -7038,7 +7043,8 @@ caption, th, td {
       height: 40px; }
     .header__nav {
       background: #fff;
-      display: block;
+      border-bottom: 1px solid #eeeeee;
+      display: none;
       padding-bottom: 20px;
       position: absolute;
       top: 100%;
@@ -7180,9 +7186,10 @@ caption, th, td {
         display: block;
         font-weight: bold;
         padding: 20px; }
+      .menu > .menu-item:hover .sub-menu {
+        display: block; }
   .sub-menu {
     background: #16284c;
-    display: block;
     padding-left: 20px;
     padding-right: 20px; }
     .sub-menu .menu-item {
