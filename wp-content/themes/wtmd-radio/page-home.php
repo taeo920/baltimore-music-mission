@@ -1,8 +1,8 @@
 <?php // Template Name: Home ?>
 
-<div class="hero" style="background-image: url('<?php mg_the_post_thumbnail_src('hero'); ?>');">
+<div class="hero" style="background-image: url('<?php mg_the_acf_image_src('hero_image', 'hero'); ?>');">
 	<div class="hero__container">
-		<h1 class="hero__headline"><?php the_field('headline'); ?></h1>
+		<h1 class="hero__headline"><?php the_field('hero_headline'); ?></h1>
 		<div class="hero__search"><?php mg_get_template_part('partials', 'form-search'); ?></div>
 	</div>
 </div>

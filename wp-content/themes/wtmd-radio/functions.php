@@ -2,7 +2,7 @@
 
 function mg_theme_setup() {
 	// Enable support for post thumbnails on posts and pages
-	add_theme_support('post-thumbnails');
+	add_theme_support('post-thumbnails', array('artist'));
 
 	// Add custom image sizes
 	add_image_size('hero', 1440, 500, true );

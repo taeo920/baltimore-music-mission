@@ -1,18 +1,18 @@
 {
     "key": "group_5ad45ec122253",
-    "title": "Headline",
+    "title": "Hero",
     "fields": [
         {
             "key": "field_5ad45ec0b3fb8",
             "label": "Headline",
-            "name": "headline",
+            "name": "hero_headline",
             "type": "text",
             "instructions": "",
             "required": 1,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
-                "class": "acf-hide-label",
+                "class": "",
                 "id": ""
             },
             "default_value": "",
@@ -20,6 +20,30 @@
             "prepend": "",
             "append": "",
             "maxlength": ""
+        },
+        {
+            "key": "field_5ad8008fd9ab9",
+            "label": "Image",
+            "name": "hero_image",
+            "type": "image",
+            "instructions": "A blue overlay is applied automatically.",
+            "required": 1,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "hero",
+            "library": "all",
+            "min_width": 1440,
+            "min_height": 500,
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -40,6 +64,6 @@
         "the_content"
     ],
     "active": 1,
-    "description": "Text field for hero text on home page",
-    "modified": 1523867637
+    "description": "Hero fields on home page",
+    "modified": 1524105578
 }
